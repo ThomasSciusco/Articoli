@@ -17,7 +17,7 @@ public class Articolo
     {
         if (CartaFedelta)
         {
-            PrezzoUnitario -= PrezzoUnitario * 0.05m;
+            PrezzoUnitario -= PrezzoUnitario * 0.05;
         }
     }
 }
@@ -39,7 +39,7 @@ public class ArticoloAlimentare : Articolo
         DateTime today = DateTime.Today;
         if (AnnoScadenza == today.Year)
         {
-            PrezzoUnitario -= PrezzoUnitario * 0.20m;
+            PrezzoUnitario -= PrezzoUnitario * 0.20;
         }
     }
 }
